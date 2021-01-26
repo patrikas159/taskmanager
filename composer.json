@@ -1,0 +1,9 @@
+{
+  "autoload": {
+    "name": "Project Todo List",
+    "description": "php todo list",
+    "psr-4": {
+      "Tasks\\": "app"
+    }
+  }
+}
