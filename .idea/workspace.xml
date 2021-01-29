@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ac30005-2b32-47b5-ae13-a2cc22f6f72d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/pages/home.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/home.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/partials/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/partials/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +75,7 @@
       <workItem from="1611655087858" duration="11802000" />
       <workItem from="1611866569033" duration="123000" />
       <workItem from="1611898091195" duration="1138000" />
-      <workItem from="1611912813870" duration="12443000" />
+      <workItem from="1611912813870" duration="16980000" />
     </task>
     <servers />
   </component>

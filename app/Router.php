@@ -8,7 +8,6 @@ class Router
 
     public static function load($file)
     {
-        //reikalingas, turim inicijuoti router klase, kad ga;etume sekanti metoda realizuoti, reikia reikalauti to failo
         $router = new static;
 
         require $file;

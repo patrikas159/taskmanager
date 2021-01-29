@@ -2,8 +2,8 @@
 
 <h1 class="mt-3 text-center">Organize it all with to-do list</h1>
 
-<div class="form-group d-flex justify-content-center">
-    <p><a href="new-task">Add new task</a></p>
+<div class="form-group d-flex justify-content-center mt-5 mb-5">
+    <button class="col-md-4 btn-lg rounded"><a href="new-task">Add new task</a></button>
 </div
 
 <div class="row mt-3 justify-content-center">
