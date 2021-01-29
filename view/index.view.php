@@ -19,39 +19,39 @@
                 <div class="form-group rounded formBack">
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" class="form-control" id="subject">
+                        <input type="text" class="form-control" id="subject" name="subject">
                     </div>
                     <div class="form-group">
                         <label for="priority">Priority:</label>
-                        <select class="form-control" id="priority">
+                        <select class="form-control" id="priority" name="priority">
                             <option class="selected disabled col">--Choose--</option>
                             <?php foreach ($priority as $item):?>
-                            <option class="col"><?= ucfirst($item) ?></option>
-                            <?php endforeach;?>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Due date:</label>
-                        <input type="date" class="form-control" id="date">
-                    </div>
-                    <div class="form-group">
-                        <label for="status">Status:</label>
-                        <select class="form-control" id="status">
-                            <option class="selected disabled col">--Choose--</option>
-                            <?php foreach ($status as $item):?>
                                 <option class="col"><?= ucfirst($item) ?></option>
                             <?php endforeach;?>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="percent">Percent completed:</label>
-                        <select class="form-control" id="percent">
-                            <option class="selected disabled col">--Choose--</option>
-                            <?php foreach ($percent as $item):?>
-                                <option class="col"><?= ucfirst($item) ?></option>
-                            <?php endforeach;?>
-                        </select>
+                        <label for="dueDate">Due date:</label>
+                        <input type="date" class="form-control" id="duedate" name="duedate">
                     </div>
+                                        <div class="form-group">
+                                            <label for="status">Status:</label>
+                                            <select class="form-control" id="status">
+                                                <option class="selected disabled col">--Choose--</option>
+                                                <?php foreach ($status as $item):?>
+                                                    <option class="col"><?= ucfirst($item) ?></option>
+                                                <?php endforeach;?>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="percent">Percent completed:</label>
+                                            <select class="form-control" id="percent">
+                                                <option class="selected disabled col">--Choose--</option>
+                                                <?php foreach ($percent as $item):?>
+                                                    <option class="col"><?= ucfirst($item) ?></option>
+                                                <?php endforeach;?>
+                                            </select>
+                                        </div>
                 </div>
                 <div class="form-group d-flex justify-content-center">
                     <button type="submit" name="send" id="send" class="mt-3 col-md-4 btn-lg rounded">Submit</button>
@@ -76,20 +76,3 @@
             </tbody>
         </table>
     </div>
-
-
-</div>
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
-</body>
-</html>

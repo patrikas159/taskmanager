@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /todo_list
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{​​​​REQUEST_FILENAME}​​​​ !-f
+RewriteCond %{​​​​REQUEST_FILENAME}​​​​ !-d
+RewriteRule . /todo_list/index.php [L]
+</IfModule>

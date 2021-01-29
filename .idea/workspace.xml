@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ac30005-2b32-47b5-ae13-a2cc22f6f72d" name="Default Changelist" comment="" />
+    <list default="true" id="5ac30005-2b32-47b5-ae13-a2cc22f6f72d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -18,12 +24,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1nbA55cBgRP7Y1oitSYs5xOA4Kh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,6 +58,9 @@
       <updated>1611648230132</updated>
       <workItem from="1611648231238" duration="518000" />
       <workItem from="1611655087858" duration="11802000" />
+      <workItem from="1611866569033" duration="123000" />
+      <workItem from="1611898091195" duration="1138000" />
+      <workItem from="1611912813870" duration="12443000" />
     </task>
     <servers />
   </component>
@@ -53,9 +68,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1611666204826">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1611898194823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611666204826" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611898194823" />
+    <state x="893" y="138" key="NewPhpClassDialog" timestamp="1611898468474">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="893" y="138" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1611898468474" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1611925093877">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611925093877" />
   </component>
 </project>
