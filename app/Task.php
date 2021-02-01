@@ -58,7 +58,7 @@ class Task
         return $statement;
     }
 
-    public  function setComplete($id){
+    public function setComplete($id){
         $this->status=1;
         try {
             $query = "UPDATE tasks SET `status` = :status WHERE id=:id";
@@ -67,10 +67,9 @@ class Task
             $stmt->bindValue(':id',$id,PDO::PARAM_STR);
             $stmt->execute();
             header('Location:/todo_list');
-        }catch (\PDOException $e){
+        }catch (PDOException $e){
             echo $e->getMessage();
         }
         $conn = null;
     }
-
 }

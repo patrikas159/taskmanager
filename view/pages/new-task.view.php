@@ -42,7 +42,8 @@
                 <!--                    </div>-->
             </div>
             <div class="form-group d-flex justify-content-center">
-                <button type="submit" name="send" id="send" class="mt-3 col-md-4 btn-lg rounded">Submit</button>
+                <button type="submit" name="send" id="send" class="mt-3 col-md-4 btn-lg rounded mr-3">Submit</button>
+                <button class="mt-3 col-md-4 btn-lg rounded"><a href="/todo_list" class="text-light">Home Page</a></button>
             </div>
         </form>
     </div>

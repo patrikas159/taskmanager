@@ -34,3 +34,6 @@ h1 {
 .col {
     background-color: #c5fcef;
 }
+.line {
+    text-decoration: line-through;
+}

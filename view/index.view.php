@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
     <title>PHP Todo List</title>
-    <link rel="stylesheet" href="view/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./view/style.css" type="text/css">
+<!--    <link rel="stylesheet" href="view/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="./view/style.css" type="text/css">-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 </head>
