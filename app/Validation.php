@@ -8,7 +8,7 @@ class Validation
 
     public function checkSubject()
     {
-        if (empty($_POST['subject']) || !preg_match('/^\w{5,255}$/', $_POST['subject'])) {
+        if (empty($_POST['subject']) || !preg_match('/\w{5,255}$/', $_POST['subject'])) {
             self::$errors[] = "The name of the subject should be the length of 5-255 symbols.";
         }
     }

@@ -17,9 +17,9 @@
                 <div class="form-group">
                     <label for="priority">Priority:</label>
                     <select class="form-control" id="priority" name="priority">
-                        <option class="col" disabled selected>--Choose--</option>
+                        <option value="" class="col" disabled selected>--Choose--</option>
                         <?php foreach ($priority as $item): ?>
-                            <option class="col"><?= ucfirst($item) ?></option>
+                            <option value="<?=$item;?>" class="col"><?= ucfirst($item) ?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>
