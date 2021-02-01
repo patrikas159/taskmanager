@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 use Tasks\DB;
 use Tasks\Task;
 $connect = DB::connect();

@@ -22,8 +22,13 @@ class Task
     {
         $this->subject = $task['subject'];
         $this->priority = $task['priority'];
-        $this->dueDate = $task['duedate'];
+        $this->dueDate = $task['dueDate'];
         $this->insertTask();
+        $_SESSION['todo_list/new-task'] = [
+            $this->subject,
+            $this->priority,
+            $this->dueDate
+        ];
     }
 
     private function insertTask()

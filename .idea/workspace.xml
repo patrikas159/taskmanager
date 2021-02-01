@@ -4,8 +4,8 @@
     <list default="true" id="5ac30005-2b32-47b5-ae13-a2cc22f6f72d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/new-task.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/new-task.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/pages/home.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/home.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/pages/new-task.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/new-task.view.php" afterDir="false" />
     </list>
@@ -63,7 +63,8 @@
       <workItem from="1611898091195" duration="1138000" />
       <workItem from="1611912813870" duration="17041000" />
       <workItem from="1612107419991" duration="9231000" />
-      <workItem from="1612165886308" duration="30000" />
+      <workItem from="1612165886308" duration="1006000" />
+      <workItem from="1612173684052" duration="16907000" />
     </task>
     <servers />
   </component>
@@ -79,13 +80,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="893" y="138" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1611898468474" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1612108994754">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1612176029712">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1612108994754" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1612108267432">
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1612176029712" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1612177343916">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1612108267432" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1612177343916" />
   </component>
 </project>

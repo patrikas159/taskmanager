@@ -3,6 +3,11 @@
 <h1 class="mt-3 text-center">Organize it all with to-do list</h1>
 <div class="row justify-content-center">
     <div class="col-md-10 mt-3">
+        <?php if (!empty($errorsArray)):?>
+        <?php foreach ($errorsArray as $error):?>
+        <div class="alert-danger mt-3 mb-3"><?=$error?></div>
+        <?php endforeach;?>
+        <?php endif;?>
         <form method="post">
             <div class="form-group rounded formBack">
                 <div class="form-group">
@@ -12,7 +17,7 @@
                 <div class="form-group">
                     <label for="priority">Priority:</label>
                     <select class="form-control" id="priority" name="priority">
-                        <option class="disabled selected col">--Choose--</option>
+                        <option class="col" disabled selected>--Choose--</option>
                         <?php foreach ($priority as $item): ?>
                             <option class="col"><?= ucfirst($item) ?></option>
                         <?php endforeach; ?>
@@ -20,7 +25,7 @@
                 </div>
                 <div class="form-group">
                     <label for="dueDate">Due date:</label>
-                    <input type="date" class="form-control" id="duedate" name="duedate">
+                    <input type="date" class="form-control" id="dueDate" name="dueDate">
                 </div>
 <!--                                    <div class="form-group">-->
 <!--                                        <label for="status">Status:</label>-->
