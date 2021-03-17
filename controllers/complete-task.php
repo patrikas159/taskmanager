@@ -3,8 +3,7 @@
 use Tasks\Request;
 use Tasks\DB;
 use Tasks\Task;
-//echo "test";
-$connections = DB::connect();
-$task = new Task($connections);
-$id = intval(basename(Request::uri()));
-$task->setComplete($id);
+
+$connection = DB::connect();
+$tasks = new Task($connection);
+$tasks->setComplete(intval(basename(Request::uri())));

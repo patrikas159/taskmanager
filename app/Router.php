@@ -20,24 +20,21 @@ class Router
         $this->routes = $routes;
     }
 
-    //uri yra uzklausa aprasyta Request klaseje
+
     public function direct($uri)
     {
         $uriPart = explode('/', $uri);
-        if (array_key_exists($uri,$this->routes)){ //tikrina ar egzistuoja uri masyve
+        if (array_key_exists($uri,$this->routes)){
             return $this->routes[$uri];
         } else {
-            $newUri = $uriPart[0]."/".$uriPart[1];
-            if (array_key_exists($newUri, $this->routes)) { //tikrinam ar egzistuoja pirma uri dalis masyve
-//                var_dump($uriPart[$newUri]);
-                $this->routes[$uri] = $this->routes[$newUri]; //perrasom masyvo elemento ideksa su reikiamu id
-                unset($this->routes[$newUri]);
-//                var_dump($this->routes);
-                if (array_key_exists($uri, $this->routes)) {//tikrinam ar masyve yra rout'as su reikiamu indeksu
-                    return $this->routes[$uri]; //grazinam faila
+            if(array_key_exists("/".$uriPart[1],$this->routes)){
+                $this->routes[$uri]=$this->routes["/".$uriPart[1]];
+                unset($this->routes["/".$uriPart[1]]);
+                if(array_key_exists($uri,$this->routes)){
+                    return $this->routes[$uri];
                 }
             } else {
-                return $this->routes[404]; // parasom, kad nieko neradom
+                return $this->routes[404];
             }
         }
     }

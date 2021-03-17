@@ -24,11 +24,6 @@ class Task
         $this->priority = $task['priority'];
         $this->dueDate = $task['dueDate'];
         $this->insertTask();
-        $_SESSION['todo_list/new-task'] = [
-            $this->subject,
-            $this->priority,
-            $this->dueDate
-        ];
     }
 
     private function insertTask()
@@ -42,39 +37,35 @@ class Task
             $stmt->bindParam(':dueDate', $this->dueDate, PDO::PARAM_STR);
             $stmt->bindParam(':status', $this->status, PDO::PARAM_STR);
             $stmt->execute();
-            header('Location:/todo_list/');
+            header('Location:/todo/');
 
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
     }
 
-    public function allTasks()
-    {
-        $statement = $this->pdo->prepare("select * from tasks");
-        $statement->execute();
-        return $statement->fetchAll(PDO::FETCH_ASSOC);
-    }
-
     public function deleteTask($id){
-        $statement =$this->pdo->prepare("DELETE FROM `tasks` WHERE id = $id");
-        $statement->execute();
-        header('Location:/todo_list');
-        return $statement;
+        try{
+            $stmt=$this->pdo->prepare("DELETE FROM task WHERE `id`=:id");
+            $stmt->bindValue(":id",$id,PDO::PARAM_INT);
+            $stmt->execute();
+            header('Location:/todo');
+        } catch (PDOException $e){
+            echo $e->getMessage();
+        }
     }
 
     public function setComplete($id){
         $this->status=1;
-        try {
-            $query = "UPDATE tasks SET `status` = :status WHERE id=:id";
-            $stmt = $this->pdo->prepare($query);
-            $stmt->bindParam(':status', $this->status, PDO::PARAM_STR);
-            $stmt->bindValue(':id',$id,PDO::PARAM_STR);
+        try{
+            $query="UPDATE task SET status= :status WHERE id=:id";
+            $stmt=$this->pdo->prepare($query);
+            $stmt->bindParam(":status",$this->status,PDO::PARAM_INT);
+            $stmt->bindValue(":id",$id,PDO::PARAM_INT);
             $stmt->execute();
-            header('Location:/todo_list');
-        }catch (PDOException $e){
+            header('Location:/todo');
+        } catch (PDOException $e){
             echo $e->getMessage();
         }
-        $conn = null;
     }
 }

@@ -1,10 +1,7 @@
 <?php
-
 namespace Tasks;
-
-class Request
-{
+class Request {
     public static function uri(){
-        return trim($_SERVER['REQUEST_URI'],"/");
+        return str_replace("/todo","",trim($_SERVER['REQUEST_URI']));
     }
 }

@@ -2,34 +2,36 @@
 
 namespace Tasks;
 
-class Validation
-{
-    private static $errors = [];
-
-    public function checkSubject()
-    {
-        if (empty($_POST['subject']) || !preg_match('/\w{5,255}$/', $_POST['subject'])) {
-            self::$errors[] = "The name of the subject should be the length of 5-255 symbols.";
+class Validation {
+    private static $errors=[];
+    public static function validate($data){
+        self::validateTitle($data['subject']);
+        self::validatePriority($data['priority']);
+        self::validateDate($data['dueDate']);
+        return self::$errors;
+    }
+    public static function validateTitle($title){
+        $valid=preg_match('/^[\w\d ,.]{5,150}$/',$title);
+        if(empty($title)){
+            Validation::$errors['title']="Input required";
+        } else if(!$valid){
+            Validation::$errors['title']="Subject length 5-150";
+        } else {
+            Validation::$errors['title']="";
         }
     }
-
-    public function checkPriority(){
-        if (empty($_POST['priority'])){
-            self::$errors[] = "Priority can't be empty";
+    public static function validatePriority($priority){
+        if(empty($priority)){
+            Validation::$errors['priority']="Input required";
+        } else {
+            Validation::$errors['priority']="";
         }
     }
-
-    public function checkDate(){
-        if ($_POST['dueDate'] < date("Y-m-d")){
-            self::$errors[] = "Date can't be empty or in the past.";
+    public static function validateDate($date){
+        if(empty($date)){
+            Validation::$errors['date']="Input required";
+        }else {
+            Validation::$errors['date']="";
         }
     }
-
-    public static function validate($item){
-       self::checkSubject($item);
-       self::checkPriority($item);
-       self::checkDate($item);
-       return self::$errors;
-    }
-
 }

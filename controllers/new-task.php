@@ -1,20 +1,23 @@
 <?php
-session_start();
+
 
 use Tasks\DB;
 use Tasks\Task;
 use Tasks\Validation;
-require 'inc/options.php';
+session_start();
 
-if (isset($_POST['send'])) {
-    $errorsArray = Validation::validate($_POST);
-//    var_dump($errorsArray);
-}
-
-if(isset($_POST['send']) && empty($errorsArray)) {
-    $connections = DB::connect();
-    $task = new Task($connections);
-    $task->createTask($_POST);
+if(isset($_POST['send'])){
+    $connection=DB::connect();
+    $error=Validation::validate($_POST);
+    if(empty(implode("",$error))){
+        $task=new Task($connection);
+        $task->createTask($_POST);
+        require ('view/pages/new-task.view.php');
+    } else {
+        $_SESSION['error'] = $error;
+        require ('view/pages/new-task.view.php');
+    }
 } else {
-    require 'view/pages/new-task.view.php';
+    unset($_SESSION['error']);
+    require ('view/pages/new-task.view.php');
 }
